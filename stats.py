@@ -1,14 +1,8 @@
-def get_book_text():
-    with open("books/frankenstein.txt") as f:
-        return f.read()
-
-def get_word_count():
-    book = get_book_text()
+def get_word_count(book):
     split_book = book.split()
     return len(split_book)
 
-def get_char_count():
-    book = get_book_text()
+def get_char_count(book):
     split_book = book.split()
     char_dict = {}
     for word in split_book:
